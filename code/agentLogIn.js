@@ -20,8 +20,8 @@ agent.on('connected', () => {
 
 // log all conversation updates
 agent.on('cqm.ExConversationChangeNotification', notificationBody => {
-    console.log(JSON.stringify(notificationBody.changes.result.convId));
-    var convId = notificationBody.changes.result.convId;
+    console.log(JSON.stringify(notificationBody.changes.result));
+    var convId = notificationBody.changes.result;
     document.getElementById("convId").innerHTML = convId;
 })
 
