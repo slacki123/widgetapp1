@@ -15,7 +15,7 @@ fs.readFile('./html/myPage.html', (err, html) => {
 		res.write(html);
 		res.end();
 	});
-
+	//adding hostname parameter is optional
 	server.listen(port, () => {
 		console.log('Server started on port ' + port);
 		});
