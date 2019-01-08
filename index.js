@@ -1,4 +1,4 @@
-require('./agentSDK/index');
+// require('./agentSDK/index');
 require('./code/server');
 require('./code/agentLogIn');
 
