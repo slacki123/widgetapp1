@@ -1,10 +1,10 @@
 const Agent = require('node-agent-sdk').Agent;
-require('dotenv').config()
+require('dotenv').config();
 
 const agent = new Agent({
-    accountId: process.env.LP_ACCOUNT,
-    username: process.env.LP_USER,
-    password: process.env.LP_PASS
+    accountId: process.env.LP_ACCOUNT || "64353961",
+    username: process.env.LP_USER || "Sebix",
+    password: process.env.LP_PASS || "Password123!"
 });
 
 agent.on('connected', () => {
