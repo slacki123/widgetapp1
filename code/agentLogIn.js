@@ -1,6 +1,5 @@
 const Agent = require('node-agent-sdk').Agent;
 require('dotenv').config();
-var convId;
 
 const agent = new Agent({
     accountId: process.env.LP_ACCOUNT || "64353961",
@@ -21,8 +20,8 @@ agent.on('connected', () => {
 
 // log all conversation updates
 agent.on('cqm.ExConversationChangeNotification', notificationBody => {
-    console.log(JSON.stringify(notificationBody));
-    convId = notificationBody.changes.result.convId;
+    console.log(JSON.stringify(notificationBody.changes.result.convId));
+    var convId = notificationBody.changes.result.convId;
     document.getElementById("convId").innerHTML = convId;
 })
 
