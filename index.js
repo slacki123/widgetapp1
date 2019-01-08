@@ -1,5 +1,5 @@
 'use strict'
-require('/node-agent-sdk/index.js');
+require('../index.js');
 require('./server');
 
 
