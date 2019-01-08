@@ -32,10 +32,6 @@
     "messaging"
   ],
   "readme": "README.md",
-  "engines": {
-    "node": ">=8.12.0",
-    "npm": ">=3.0"
-  },
   "license": "MIT",
   "dependencies": {
     "async": "^2.1.4",
